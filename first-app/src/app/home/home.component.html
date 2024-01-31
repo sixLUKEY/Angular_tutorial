@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-5xl p-5">Home Page</h1>
+
+    <section class="py-5 px-5">
+      <form action="">
+        <div class="flex gap-5">
+          <input
+            type="text"
+            placeholder="Filter by City"
+            class="border border-slate-600 rounded-md ps-2 w-96"
+          />
+          <button
+            type="button"
+            class="p-[10px] border bg-slate-800 text-white rounded-md"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="results">
+      <app-housing-location></app-housing-location>
+    </section>
+  </body>
+</html>
