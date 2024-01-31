@@ -1,16 +1,11 @@
-import { Component } from '@angular/core';
-import { HousingLocationComponent } from '../housing-location/housing-location.component';
-import { Housinglocation } from '../housinglocation';
-import { CommonModule } from '@angular/common';
+import { Injectable } from '@angular/core';
+import { Housinglocation } from './housinglocation';
 
-@Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [HousingLocationComponent, CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+@Injectable({
+  providedIn: 'root'
 })
-export class HomeComponent {
+export class HousingService {
+
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
   housingLocationList: Housinglocation[] = [
@@ -115,4 +110,8 @@ export class HomeComponent {
       laundry: true
     }
   ];
+
+  getAllHousingLocations(): Housinglocation[] | any {
+    // return this.housingLocationList;
+  }
 }
