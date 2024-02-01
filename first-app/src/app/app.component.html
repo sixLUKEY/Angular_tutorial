@@ -1,4 +1,14 @@
-<app-home></app-home>
-
-<router-outlet />
+<main>
+    <a [routerLink]="['/']">
+        <header>
+            <!-- <img src="" alt=""> -->
+            <div>
+                someLOGO
+            </div>
+        </header>
+    </a>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
+</main>
 
