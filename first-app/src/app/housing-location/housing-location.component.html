@@ -1,22 +1,22 @@
 <section class="listing">
-  <div
-    class="card bg-gray-100 w-fit rounded-lg cursor-pointer group overflow-clip"
-  >
-    <div class="ing-wrapper overflow-clip">
-      <img
-        [src]="housingLocation.photo"
-        alt="Exterior photo of {{ housingLocation.name }}"
-        class="listing-photo aspect-video group-hover:scale-110 transition duration-500 ease-in-out"
-      />
+  <a [routerlink]="['/details', housingLocation.id]">
+    <div class="card bg-gray-100 w-fit rounded-lg group overflow-clip">
+      <div class="ing-wrapper overflow-clip">
+        <img
+          [src]="housingLocation.photo"
+          alt="Exterior photo of {{ housingLocation.name }}"
+          class="listing-photo aspect-video group-hover:scale-110 transition duration-500 ease-in-out"
+        />
+      </div>
+      <div class="content pt-2 pb-5 px-3">
+        <h2 class="listing-heading text-2xl font-bold text-slate-500">
+          {{ housingLocation.name }}
+        </h2>
+        <p class="listing-location text-sm ps-1">
+          {{ housingLocation.city }},
+          {{ housingLocation.state }}
+        </p>
+      </div>
     </div>
-    <div class="content pt-2 pb-5 px-3">
-      <h2 class="listing-heading text-2xl font-bold text-slate-500">
-        {{ housingLocation.name }}
-      </h2>
-      <p class="listing-location text-sm ps-1">
-        {{ housingLocation.city }},
-        {{ housingLocation.state }}
-      </p>
-    </div>
-  </div>
+  </a>
 </section>
