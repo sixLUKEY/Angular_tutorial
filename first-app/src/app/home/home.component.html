@@ -26,7 +26,10 @@
       </form>
     </section>
     <section class="results grid grid-cols-3 gap-5 px-5">
-      <app-housing-location *ngFor="let housingLocation of housingLocationList" [housingLocation]="housingLocation"></app-housing-location>
+      <app-housing-location
+        *ngFor="let housingLocation of housingLocationList"
+        [housingLocation]="housingLocation"
+      ></app-housing-location>
     </section>
   </body>
-</html>             
+</html>
